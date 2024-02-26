@@ -1,11 +1,11 @@
 import axios from "axios";
 import { AxiosResponse } from "axios";
 
-axios.defaults.baseURL = 'https://proxy.cors.sh/' + 'https://api.p-rd.com/Fuse2_RestAPI/api';
+axios.defaults.baseURL = 'https://api.p-rd.com/Fuse2_RestAPI/api';
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 axios.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded';
-axios.defaults.headers.common['x-cors-api-key'] = 'temp_03b43894fcae11b27ce3052e4ede4a61';
-axios.defaults.withCredentials = true;
+// axios.defaults.headers.common['x-cors-api-key'] = 'temp_03b43894fcae11b27ce3052e4ede4a61';
+// axios.defaults.withCredentials = true;
 
 const API = {
     getApiToken: (): Promise<AxiosResponse> => {
