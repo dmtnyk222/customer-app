@@ -19,7 +19,7 @@ const AppLayout = ({children}: AppLayoutProps) => {
 
     useEffect(() => {
         API.getApiToken();
-        // API.getRateSchemes();
+        API.getRateSchemes();
     }, [])
 
     return (
